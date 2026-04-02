@@ -1,0 +1,46 @@
+The system uses PWM-based motor control via L298N, allowing variable fan speed instead of simple ON/OFF 
+switching, which improves energy efficiency and responsiveness.
+
+1. DHT11 Sensor Connection
+
+| DHT11 Pin | Arduino UNO |
+| --------- | ----------- |
+| VCC       | 5V          |
+| DATA      | D2          |
+| GND       | GND         |
+This sensor sends temperature + humidity data to Arduino for processing.
+
+
+2️. L298N Motor Driver (Filter)
+| L298N Pin | Arduino UNO     |
+| --------- | --------------- |
+| ENA       | D5 (PWM)        |
+| IN1       | D6              |
+| IN2       | D7              |
+| GND       | GND             |
+| +12V      | External Supply |
+
+a) ENA (D5) → controls speed using PWM
+b) IN1 & IN2 → control direction (you fixed direction)
+c) External supply powers motor (Arduino cannot handle it)
+
+👉 Motor is connected to L298N output terminals (not directly to Arduino)
+
+
+3. LCD Display (I²C)
+| LCD Pin | Arduino UNO |
+| ------- | ----------- |
+| SDA     | A4          |
+| SCL     | A5          |
+| VCC     | 5V          |
+| GND     | GND         |
+Displays temperature, humidity, fan speed
+
+
+4. Buzzer Connection
+| Buzzer Pin | Arduino UNO |
+| ---------- | ----------- |
+| +          | D8          |
+| –          | GND         |
+Turns ON when temperature crosses danger level
+
