@@ -1,0 +1,6 @@
+Indoor air quality and environmental conditions have a direct impact on comfort, health, and productivity, yet they are often ignored in everyday living spaces. 
+This project, AeroSense, is designed to address that gap by creating a simple and affordable system that continuously monitorstemperature, humidity, and air 
+quality in real time.
+The system not only displays environmental data but also responds to it intelligently. When conditions go beyond a defined comfort range, it 
+automatically activates a filtration mechanism to improve air quality. By combining basic sensors, automation, and wireless control, this prototype
+demonstrates a practical step toward smarter and more energy-efficient indoor environments.
