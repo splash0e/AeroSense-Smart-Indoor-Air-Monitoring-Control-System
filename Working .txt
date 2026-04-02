@@ -1,0 +1,29 @@
+1. Basic Structure - 
+| Temperature | Humidity | Air Quality | Condition Status   | Motor (Filter) |
+| ----------- | -------- | ----------- | ------------------ | -------------- |
+| Normal      | Normal   | Good        | Comfortable        | OFF            |
+| High        | Normal   | Good        | High Temperature   | ON             |
+| Normal      | High     | Good        | High Humidity      | ON             |
+| Normal      | Normal   | Poor        | Poor Air Quality   | ON             |
+| High        | High     | Poor        | Critical Condition | ON             |
+| Normal      | Normal   | Normal      | Stable Environment | OFF            |
+
+2. Working - 
+The system continuously monitors environmental conditions using the DHT11 and air quality sensor. The Arduino processes 
+these inputs in real time and compares them with predefined threshold values for temperature, humidity, and air quality.
+If any parameter exceeds its safe limit, the Arduino sends a signal to the relay module, which activates the 
+motor (filter/fan). This helps bring the environment back to a comfortable range. Meanwhile, all sensor readings 
+are displayed on the LCD for real-time monitoring. Once the conditions return to normal, the system 
+automatically turns the motor OFF, ensuring energy-efficient operation
+
+3. Upgrades in Filter's - 
+
+| Component / Module           | Function                       | Target Parameter   | Effect on Environment                      | Complexity | Practical Use       |
+| ---------------------------- | ------------------------------ | ------------------ | ------------------------------------------ | ---------- | ------------------- |
+| Air Purifier (HEPA + Carbon) | Filters dust, smoke, and gases | Air Quality (AQI)  | Significantly improves air cleanliness     | Medium     | Highly Recommended  |
+| Humidifier                   | Adds moisture to air           | Humidity (Low)     | Increases comfort in dry conditions        | Low        | Recommended         |
+| Dehumidifier                 | Removes excess moisture        | Humidity (High)    | Prevents dampness, mold, discomfort        | Medium     | Recommended         |
+| Peltier Cooling Module       | Provides localized cooling     | Temperature (High) | Slight temperature reduction               | High       | Limited (Demo Use)  |
+| Smart Exhaust / Ventilation  | Exchanges indoor & outdoor air | AQI + Temperature  | Removes polluted air, improves circulation | Low        | Highly Practical    |
+| Basic Fan (Current System)   | Circulates air only            | General            | Minimal improvement (no actual filtering)  | Very Low   | Basic / Entry Level |
+.

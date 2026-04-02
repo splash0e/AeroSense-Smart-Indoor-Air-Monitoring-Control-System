@@ -1,0 +1,28 @@
+1. Arduino UNO
+Acts as the main control unit, processing sensor data and executing the automation logic.
+
+2. DHT11 Sensor
+Measures temperature and humidity of the surrounding environment.
+
+3. Air Quality Sensor (MQ Series / Equivalent)
+Detects gas concentration levels to estimate indoor air quality.
+
+4. 16x2 LCD Display
+Displays real-time temperature, humidity, and air quality readings.
+
+5. Relay Module
+Works as a switch to control the motor based on signals from the Arduino.
+
+6. DC Motor / Fan (Filter System)
+Acts as the air filtration or ventilation mechanism when triggered.
+
+7. Power Supply or Batteries (Solar source)
+Provides the required power to run the system components.
+
+8. Jumper Wires & Breadboard
+Used for circuit connections and prototyping.
+
+NOTE - 
+Future Improvement
+Bluetooth Module (HC-05/HC-06)
+Can be added to enable wireless monitoring and control via a smartphone.
