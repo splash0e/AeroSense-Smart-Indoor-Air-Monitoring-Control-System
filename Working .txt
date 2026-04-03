@@ -26,4 +26,5 @@ automatically turns the motor OFF, ensuring energy-efficient operation
 | Peltier Cooling Module       | Provides localized cooling     | Temperature (High) | Slight temperature reduction               | High       | Limited (Demo Use)  |
 | Smart Exhaust / Ventilation  | Exchanges indoor & outdoor air | AQI + Temperature  | Removes polluted air, improves circulation | Low        | Highly Practical    |
 | Basic Fan (Current System)   | Circulates air only            | General            | Minimal improvement (no actual filtering)  | Very Low   | Basic / Entry Level |
-.
+
+Mission Accomplished Respect ++++ 
